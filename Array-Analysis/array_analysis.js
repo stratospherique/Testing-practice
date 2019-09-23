@@ -1,5 +1,5 @@
-const arrayAnalysis = (arr) => {
-  return {
+const arrayAnalysis = (arr) => (
+  {
     average: Math.floor(arr.reduce((prev, curr) => (prev + curr), 0) / arr.length),
     min: arr.reduce((prev, curr) => {
       if (curr < prev) {
@@ -14,7 +14,7 @@ const arrayAnalysis = (arr) => {
       return prev;
     }),
     length: arr.length,
-  };
-};
+  }
+);
 
 export default arrayAnalysis;
