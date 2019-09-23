@@ -9,5 +9,5 @@ test('should give cyphered version of a string while ignoring ponctuations', () 
 });
 
 test('should give cyphered version of a string while wrapping on edge ', () => {
-  expect(cesarShipher('? am done!', 1)).toEqual('? bn epoz!');
+  expect(cesarShipher('? am donezo!', 1)).toEqual('? bn epofap!');
 });

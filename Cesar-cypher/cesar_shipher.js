@@ -1,5 +1,5 @@
-const cesarShipher = (str, key) => {
-  return str.split('').map((item) => {
+const cesarShipher = (str, key) => (
+  str.split('').map((item) => {
     if (item.match(/([A-Za-z])/)) {
       let newChar = item.charCodeAt(0) + key;
       if (newChar > 90 && newChar < 97) {
@@ -10,7 +10,7 @@ const cesarShipher = (str, key) => {
       return String.fromCharCode(newChar);
     }
     return item;
-  }).join('');
-};
+  }).join('')
+);
 
 export default cesarShipher;
