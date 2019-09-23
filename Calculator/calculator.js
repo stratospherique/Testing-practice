@@ -1,7 +1,16 @@
-const Calculator = () => {
-  const add(x, y) {
-    return [...argumenst].reduce((sum, cur) => (sum + cur), 0);
-  }
-}
+const Calculator = {
+  add: (a, b) => {
+    return a + b;
+  },
+  substract(a, b) {
+    return a - b;
+  },
+  divide(a, b) {
+    return a / b;
+  },
+  multiply(a, b) {
+    return a * b;
+  },
+};
 
-module.exports = Calculator;
+export default Calculator;
